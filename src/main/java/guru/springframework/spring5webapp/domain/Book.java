@@ -33,10 +33,18 @@ public class Book {
     public Book() {
     }
 
-    public Book(String isbn, String title) {
+    public Book(String title, String isbn) {
         this.isbn = isbn;
         this.title = title;
 
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getTitle() {
@@ -69,7 +77,6 @@ public class Book {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", isbn='" + isbn + '\'' +
-                ", authors=" + authors +
                 '}';
     }
 
